@@ -8,7 +8,7 @@ getgenv().Config = {
         ["Usernames"] = {"kingltnsell"},
         ["Items"] = {
             ["Currency"] = {
-                ["Diamonds"] = all,
+                ["Diamonds"] = 50000000,
             },
             ["Egg"] = {
                 ["Huge Machine Egg 4"] = 1,
