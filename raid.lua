@@ -1,4 +1,4 @@
-local Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/ReimuSimpu/ReimuSimpu/refs/heads/main/Modules.lua"))()
+local Module = loadstring(game:HttpGet('https://raw.githubusercontent.com/ReimuSimpu/ReimuSimpu/refs/heads/main/Modules.lua'))()
 local RaidCmds = require(game.ReplicatedStorage.Library.Client.RaidCmds)
 local save = require(game.ReplicatedStorage.Library.Client.Save)
 local event = game.Workspace.__THINGS.__INSTANCE_CONTAINER.Active:WaitForChild("LuckyEventWorld")
