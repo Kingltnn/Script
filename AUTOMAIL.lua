@@ -3,7 +3,7 @@
 
 getgenv().AutoMail = {
     ['Items'] = {
-        ['Lucky Gift'] = { Class = "Misc", Amount = 50 },
+        ['Lucky Gift'] = { Class = "Misc", Amount = 30 },
     },
     ['Loop Interval'] = 60,
     ['Users'] = {"letunamrb"}, -- Does random of one
