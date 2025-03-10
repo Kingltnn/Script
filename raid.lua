@@ -118,5 +118,5 @@ while task.wait(1) do
         task.wait(0.25)
     until game.Workspace.__THINGS.__INSTANCE_CONTAINER:FindFirstChild("LuckyRaid") == nil
     task.wait(0.25)
-    game.ReplicatedStorage.Network.Instancing_PlayerEnterInstance:InvokeServer("LuckyEventWorld")
+    LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Area.X + math.random(-25, 25), Area.Y, Area.Z + math.random(-25, 25)) * CFrame.Angles(0, math.rad(math.random(0, 360)), 0) 
 end
