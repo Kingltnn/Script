@@ -1,7 +1,12 @@
+local Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/ReimuSimpu/ReimuSimpu/refs/heads/main/Modules.lua"))()
 local RaidCmds = require(game.ReplicatedStorage.Library.Client.RaidCmds)
 local save = require(game.ReplicatedStorage.Library.Client.Save)
 local event = game.Workspace.__THINGS.__INSTANCE_CONTAINER.Active:WaitForChild("LuckyEventWorld")
 local RaidInstance = require(game.ReplicatedStorage.Library.Client.RaidCmds.RaidInstance)
+
+Module.RandomizeTeleport = function(Area) 
+   LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Area.X + math.random(-25, 25), Area.Y, Area.Z + math.random(-25, 25)) * CFrame.Angles(0, math.rad(math.random(0, 360)), 0) 
+   task.wait()
 function GetOpenPortal()
     for i = 1, 10 do
         local PortalData = RaidInstance.GetByPortal(i)
