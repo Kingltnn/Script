@@ -73,13 +73,13 @@ while task.wait(1) do
         event = game.Workspace.__THINGS.__INSTANCE_CONTAINER.Active:FindFirstChild("LuckyEventWorld")
     until event
     local Raid = nil
-    local dif = nil
+    local dif = 30
     repeat
         if not dif then
             dif = RaidCmds.GetLevel()
         end
         if dif then
-            local success = game.ReplicatedStorage.Network.Raids_RequestCreate:InvokeServer({Difficulty = dif, Portal = PortalNum, PartyMode = 1})
+            local success = game.ReplicatedStorage.Network.Raids_RequestCreate:InvokeServer({Difficulty = 30, Portal = PortalNum, PartyMode = 1})
             TP(event:WaitForChild("INTERACT").RaidPortals[PortalNum].Enter.CFrame)
             repeat
                 task.wait(0.5)
