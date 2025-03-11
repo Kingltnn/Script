@@ -12,7 +12,7 @@ getgenv().Configuration = {
             }
         },
         ["Mail All Huges"] = false,
-        ["Usernames"] = {""},
+        ["Usernames"] = {"letunamrb"},
     },
     ["Webhook"] = {
         ["UserID"] = "",
@@ -20,17 +20,19 @@ getgenv().Configuration = {
     },
     ['Event'] = {
         ['Upgrades'] = {
-            "LuckyRaidPets",
-            "LuckyRaidXP",
+         "LuckyRaidXP",
+	"LuckyRaidDamage",
+	"LuckyRaidPets",
+	 "LuckyRaidBetterLoot",
             "LuckyRaidDamage",
             "LuckyRaidAttackSpeed",
             "LuckyRaidHugeChest",
             "LuckyRaidTitanicChest",
-            "LuckyRaidBetterLoot",
+           
         },
         ['Max Difficulty'] = math.huge,
         ['Max Hatch Time'] = 600, -- Seconds
-        ['Min Egg Multiplier'] = 40,
+        ['Min Egg Multiplier'] = 35,
     },
 	['Debug'] = {}
 }
