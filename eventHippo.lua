@@ -34,6 +34,5 @@ getgenv().Configuration = {
         ['Max Hatch Time'] = 2000, -- Seconds
         ['Min Egg Multiplier'] = 40,
     },
-['Debug'] = {}
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/009d6067a293590c0f76ad704c24673b.lua"))()
