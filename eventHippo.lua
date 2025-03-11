@@ -31,8 +31,8 @@ getgenv().Configuration = {
            
         },
         ['Max Difficulty'] = math.huge,
-        ['Max Hatch Time'] = 2000, -- Seconds
-        ['Min Egg Multiplier'] = 40,
+        ['Max Hatch Time'] = 1200, -- Seconds
+        ['Min Egg Multiplier'] = 35,
     },
 ['Debug'] = {}
 }
