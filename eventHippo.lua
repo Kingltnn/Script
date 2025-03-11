@@ -30,9 +30,9 @@ getgenv().Configuration = {
             "LuckyRaidTitanicChest",
            
         },
-        ['Max Difficulty'] = math.huge,
+        ['Max Difficulty'] = 100,
         ['Max Hatch Time'] = 1200, -- Seconds
-        ['Min Egg Multiplier'] = 35,
+        ['Min Egg Multiplier'] = 30,
     },
 ['Debug'] = {}
 }
