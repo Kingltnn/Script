@@ -17,10 +17,10 @@ getgenv().Configuration = {
     },
     ['Event'] = {
         ['Raid Settings'] = {
-            ['Enabled'] = false,
+            ['Enabled'] = true,
             ['Max Difficulty'] = 200,
             ['Egg Multiplier'] = 60,
-            ['Leave Breakables'] = {"LuckyRaidBigChest"}, -- LuckyRaidMediumChest, etc
+            ['Leave Breakables'] = {"LuckyRaidBigChest,LuckyRaidMediumChest"}, -- LuckyRaidMediumChest, etc
         },
         ['Craft Gifts'] = true,
         ['Upgrades'] = { "LuckyRaidPets", "LuckyRaidDamage", "LuckyRaidAttackSpeed" },
