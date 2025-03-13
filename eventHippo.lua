@@ -1,38 +1,31 @@
 getgenv().Configuration = {
     ['Auto Mail'] = {
-        ["Items"] = {
+        ['Items'] = {
             ['Lootbox'] = {
-                ['Lucky Gift'] = { Amount = 15 },
-            },
-            ['Egg'] = {
-                ['Huge Machine Egg 5'] = { Amount = 1 },
+                ['Lucky Gift'] = { ['Amount'] = 50 },
             },
             ['Misc'] = {
-                ['Leprechaun Key'] = { Amount = 1 }, 
-            }
+                ['Leprechaun Key'] = { ['Amount'] = 1 },
+            },
         },
-        ["Mail All Huges"] = false,
-        ["Usernames"] = {"letunamrb"},
+        ['Mail All Huges'] = false,
+        ['Usernames'] = {"letunamrb"},
     },
     ["Webhook"] = {
         ["UserID"] = "",
         ["WebhookURL"] = "https://discord.com/api/webhooks/1279722812931575851/G30w5whctavJ7ABeLBE0ZCFgxegLu-PHd9HMex-748vLqJ6tLK-QdicuAiY0Xqm8wRwo",
     },
     ['Event'] = {
-        ['Upgrades'] = {
-         "LuckyRaidXP",
-	"LuckyRaidDamage",
-	"LuckyRaidPets",
-	 "LuckyRaidBetterLoot",
-            "LuckyRaidDamage",
-            "LuckyRaidAttackSpeed",
-            "LuckyRaidHugeChest",
-            "LuckyRaidTitanicChest",
-           
+        ['Raid Settings'] = {
+            ['Enabled'] = false,
+            ['Max Difficulty'] = 200,
+            ['Egg Multiplier'] = 60,
+            ['Leave Breakables'] = {"LuckyRaidBigChest"}, -- LuckyRaidMediumChest, etc
         },
-        ['Max Difficulty'] = 150,
-        ['Max Hatch Time'] = 2000, -- Seconds
-        ['Min Egg Multiplier'] = 40,
+        ['Craft Gifts'] = true,
+        ['Upgrades'] = { "LuckyRaidPets", "LuckyRaidDamage", "LuckyRaidAttackSpeed" },
     },
+    ['Equip Enchants'] = {"Strong Pets", "Criticals", "Strong Pets", "Criticals", "Strong Pets", "Strong Pets"},
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/009d6067a293590c0f76ad704c24673b.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b0dec084ff36c27d9dc119ad6b094544.lua"))()
+ 
