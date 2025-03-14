@@ -26,6 +26,7 @@ getgenv().Configuration = {
         ['Upgrades'] = { "LuckyRaidPets", "LuckyRaidDamage", "LuckyRaidAttackSpeed" },
     },
     ['Equip Enchants'] = {},
+     ['Debug'] = {},
 }
 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b0dec084ff36c27d9dc119ad6b094544.lua"))()
