@@ -12,7 +12,7 @@ getgenv().Settings = {
 		
 		["Egg Settings"] = {
 			Enabled = true, --// false --> Will leave and keep farming Raids.
-			MinimumEggMulti = 250, --// 20 --> 20x
+			MinimumEggMulti = 20, --// 20 --> 20x
 			MinimumLuckyCoins = "50m",
 			MaxOpenTime = 5, --// 60 --> 60 minutes.
 		},
