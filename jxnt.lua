@@ -23,7 +23,7 @@ getgenv().Settings = {
 		PurchaseUpgrades = true,
 	},
 
-	[[ Created by System Exodus // Jxnt ]]
+	
 }
 
 
