@@ -2,32 +2,32 @@ getgenv().Configuration = {
     ['Auto Mail'] = {
         ['Items'] = {
             ['Lootbox'] = {
-                ['Lucky Gift'] = { ['Amount'] = 50 },
+                ['Lucky Gift'] = { ['Amount'] = 15 },
             },
             ['Misc'] = {
-                ['Leprechaun Key'] = { ['Amount'] = 1 },
+                ['Leprechaun Key'] = { ['Amount'] = 50 },
+                ['Lucky Raid Boss Key'] = { ['Amount'] = 50 },
             },
         },
-        ['Mail All Huges'] = false,
-        ['Usernames'] = {"letunamrb"},
+        ['Mail All Huges'] = flase,
+        ['Usernames'] = { "letunamrb" },
     },
     ["Webhook"] = {
         ["UserID"] = "",
-        ["WebhookURL"] = "https://discord.com/api/webhooks/1279722812931575851/G30w5whctavJ7ABeLBE0ZCFgxegLu-PHd9HMex-748vLqJ6tLK-QdicuAiY0Xqm8wRwo",
+        ["WebhookURL"] = https://discord.com/api/webhooks/1279722812931575851/G30w5whctavJ7ABeLBE0ZCFgxegLu-PHd9HMex-748vLqJ6tLK-QdicuAiY0Xqm8wRwo"",
     },
     ['Event'] = {
         ['Raid Settings'] = {
             ['Enabled'] = true,
-            ['Max Difficulty'] = 200,
-            ['Egg Multiplier'] = 60,
-            ['Leave Breakables'] = {"LuckyRaidBigChest,LuckyRaidMediumChest"}, -- LuckyRaidMediumChest, etc
+            ['Max Difficulty'] = 500,
+            ['Egg Multiplier'] = 30,
+            ['Raid Bosses'] = {true, true, true}, -- Enabled, Heroic, Use Required Item Doors
+            ['Leave Breakables'] = {"LuckyRaidBigChest"}, -- LuckyRaidMediumChest, etc
         },
-        ['Craft Gifts'] = true,
-        ['Upgrades'] = { "LuckyRaidPets", "LuckyRaidDamage", "LuckyRaidAttackSpeed" },
+        ['Craft Gift'] = true,
+        ['Upgrades'] = { "LuckyRaidXP", "LuckyRaidDamage", "LuckyRaidAttackSpeed" },
     },
+    --['Debug'] = {},
     ['Equip Enchants'] = {},
-     ['Debug'] = {},
 }
-
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b0dec084ff36c27d9dc119ad6b094544.lua"))()
- 
