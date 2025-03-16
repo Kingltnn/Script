@@ -27,7 +27,8 @@ getgenv().Configuration = {
         ['Craft Gift'] = true,
         ['Upgrades'] = { "LuckyRaidXP", "LuckyRaidDamage", "LuckyRaidAttackSpeed" },
     },
-    --['Debug'] = {},
+    
+    ['Debug'] = {},
     ['Equip Enchants'] = {},
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b0dec084ff36c27d9dc119ad6b094544.lua"))()
