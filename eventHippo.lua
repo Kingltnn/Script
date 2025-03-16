@@ -14,7 +14,7 @@ getgenv().Configuration = {
     },
     ["Webhook"] = {
         ["UserID"] = "",
-        ["WebhookURL"] = https://discord.com/api/webhooks/1279722812931575851/G30w5whctavJ7ABeLBE0ZCFgxegLu-PHd9HMex-748vLqJ6tLK-QdicuAiY0Xqm8wRwo"",
+        ["WebhookURL"] = "https://discord.com/api/webhooks/1279722812931575851/G30w5whctavJ7ABeLBE0ZCFgxegLu-PHd9HMex-748vLqJ6tLK-QdicuAiY0Xqm8wRwo",
     },
     ['Event'] = {
         ['Raid Settings'] = {
