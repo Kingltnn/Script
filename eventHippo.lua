@@ -9,7 +9,7 @@ getgenv().Configuration = {
                 ['Lucky Raid Boss Key'] = { ['Amount'] = 50 },
             },
         },
-        ['Mail All Huges'] = flase,
+        ['Mail All Huges'] = false,
         ['Usernames'] = { "letunamrb" },
     },
     ["Webhook"] = {
