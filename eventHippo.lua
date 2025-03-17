@@ -25,7 +25,7 @@ getgenv().Configuration = {
             ['Leave Breakables'] = {"LuckyRaidBigChest"}, -- LuckyRaidMediumChest, etc
         },
         ['Craft Gift'] = true,
-        ['Upgrades'] = { "LuckyRaidXP", "LuckyRaidDamage", "LuckyRaidAttackSpeed" },
+        ['Upgrades'] = { "LuckyRaidDamage", "LuckyRaidXP",  "LuckyRaidAttackSpeed" },
     },
     
     --['Debug'] = {},
