@@ -1,7 +1,7 @@
 getgenv().Settings = {
 
 	["Raid Settings"] = {
-		Enabled = true, --// false --> Will Farm Main Area (if FarmArea = true)
+		Enabled = false, --// false --> Will Farm Main Area (if FarmArea = true)
 
 		JoinRaid = "", --// Join an alts raid (or just delete this).
 		Difficulty = "Max", --// "Max", 1-...
@@ -19,7 +19,7 @@ getgenv().Settings = {
 	},
 
 	["Main Area Settings"] = {
-		FarmArea = false,
+		FarmArea = true,
 		PurchaseUpgrades = true,
 	},
 
