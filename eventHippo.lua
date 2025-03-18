@@ -2,7 +2,7 @@ getgenv().Configuration = {
     ['Auto Mail'] = {
         ['Items'] = {
             ['Lootbox'] = {
-                ['Lucky Gift'] = { ['Amount'] = 15 },
+                ['Lucky Gift'] = { ['Amount'] = 10 },
             },
             ['Misc'] = {
                 ['Leprechaun Key'] = { ['Amount'] = 50 },
