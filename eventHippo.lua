@@ -18,7 +18,7 @@ getgenv().Configuration = {
     },
     ['Event'] = {
         ['Raid Settings'] = {
-            ['Enabled'] = true,
+            ['Enabled'] = false,
             ['Max Difficulty'] = math.huge,
             ['Egg Multiplier'] = 100,
             ['Raid Bosses'] = {true, true, true}, -- Enabled, Heroic, Use Required Item Doors
