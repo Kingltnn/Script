@@ -18,9 +18,9 @@ getgenv().Configuration = {
     },
     ['Event'] = {
         ['Raid Settings'] = {
-            ['Enabled'] = false,
+            ['Enabled'] = true,
             ['Max Difficulty'] = math.huge,
-            ['Egg Multiplier'] = 100,
+            ['Egg Multiplier'] = 500,
             ['Raid Bosses'] = {true, true, true}, -- Enabled, Heroic, Use Required Item Doors
             ['Leave Breakables'] = {"LuckyRaidBigChest"}, -- LuckyRaidMediumChest, etc
         },
@@ -28,7 +28,7 @@ getgenv().Configuration = {
         ['Upgrades'] = { "LuckyRaidDamage", "LuckyRaidXP",  "LuckyRaidAttackSpeed" },
     },
     
-    ['Debug'] = {},
+    --['Debug'] = {},
     ['Equip Enchants'] = {},
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b0dec084ff36c27d9dc119ad6b094544.lua"))()
