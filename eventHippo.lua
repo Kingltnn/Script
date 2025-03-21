@@ -2,11 +2,18 @@ getgenv().Configuration = {
     ['Auto Mail'] = {
         ['Items'] = {
             ['Lootbox'] = {
-                ['Lucky Gift'] = { ['Amount'] = 10 },
+                ['Lucky Gift'] = { ['Amount'] = 15 },
+                ['Mega Enchant Chest'] = { ['Amount'] = 1 },
+                ['Mega Potion Chest'] = { ['Amount'] = 1 },
+                ['Mega Ultimate Chest'] = { ['Amount'] = 1 },
+                ['Mega Charm Chest'] = { ['Amount'] = 1 },
             },
             ['Misc'] = {
                 ['Leprechaun Key'] = { ['Amount'] = 50 },
-                ['Lucky Raid Boss Key'] = { ['Amount'] = 50 },
+                ['Lucky Raid Boss Key'] = { ['Amount'] = 500 },
+            },
+            ["Currency"] = {
+                ["Diamonds"] = { ['Amount'] = 1000000 },
             },
         },
         ['Mail All Huges'] = true,
@@ -19,15 +26,15 @@ getgenv().Configuration = {
     ['Event'] = {
         ['Raid Settings'] = {
             ['Enabled'] = true,
-            ['Max Difficulty'] = math.huge,
-            ['Egg Multiplier'] = 500,
-            ['Raid Bosses'] = {true, true, true}, -- Enabled, Heroic, Use Required Item Doors
-            ['Leave Breakables'] = {"LuckyRaidBigChest"}, -- LuckyRaidMediumChest, etc
+            ['Max Difficulty'] = 5000,
+            ['Max Raid Time'] = 60,
+            ['Egg Multiplier'] = 200,
+            ['Raid Bosses'] = {true, true, false}, -- Enabled, Heroic, Use Required Item Doors
+            ['Leave Breakables'] = {"LuckyRaidMassiveChest", "LuckyRaidPotOfGoldChest"}, -- LuckyRaidMediumChest, etc
         },
         ['Craft Gift'] = true,
-        ['Upgrades'] = { "LuckyRaidDamage", "LuckyRaidXP",  "LuckyRaidAttackSpeed" },
+        ['Upgrades'] = { "LuckyRaidXP", "LuckyRaidPets", "LuckyRaidDamage", "LuckyRaidAttackSpeed" },
     },
-    
     ['Debug'] = {},
     ['Equip Enchants'] = {},
 }
