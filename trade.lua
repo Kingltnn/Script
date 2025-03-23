@@ -8,7 +8,7 @@ getgenv().Trader = {
         ["Egg"] = {
             ["Huge Machine Egg 4"] = { pt = nil, sh = nil, tn = nil },
         },
-        ['Items'] = {
+        ['Misc'] = {
                 ['Mining Coins Booster'] = { pt = nil, sh = nil, tn = nil },
                 ['Mining Speed Booster'] = { pt = nil, sh = nil, tn = nil },
                 ['Mining Damage Booster'] = { pt = nil, sh = nil, tn = nil },
