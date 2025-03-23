@@ -3,7 +3,7 @@ getgenv().AutoMail = {
         ['Mining Coins Booster'] = { Class = "Misc", Amount = 100 },
         ['Mining Speed Booster'] = { Class = "Misc", Amount = 100 },
         ['Mining Damage Booster'] = { Class = "Misc", Amount = 100 },
-        ['Amethyst Gem'] = { Class = "Misc", Amount = 100 },
+        ['Amethyst Gem'] = { Class = "Misc", Amount = 1 },
     },
     ['Loop Interval'] = 60,
     ['Users'] = {"letunamrb"}, -- Does random of one
