@@ -28,7 +28,7 @@ getgenv().Configuration = {
     ['Event'] = {
         ['Raid Settings'] = {
             ['Enabled'] = true,
-            ['Max Difficulty'] = 7000,
+            ['Max Difficulty'] = 5000,
             ['Max Raid Time'] = 60,
             ['Egg Multiplier'] = 300,
             ['Raid Bosses'] = {true, true, false}, -- Enabled, Heroic, Use Required Item Doors
@@ -37,7 +37,7 @@ getgenv().Configuration = {
         ['Craft Gift'] = true,
         ['Upgrades'] = {  "LuckyRaidPets", "LuckyRaidDamage","LuckyRaidXP", "LuckyRaidAttackSpeed" },
     },
-    --['Debug'] = {},
+    ['Debug'] = {},
     ['Equip Enchants'] = {},
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b0dec084ff36c27d9dc119ad6b094544.lua"))()
