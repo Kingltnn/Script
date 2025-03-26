@@ -1,41 +1,33 @@
-getgenv().Configuration = {
+
+getgenv().Configuration = { -- This script does NOT hatch eggs ONLY digsite
     ['Auto Mail'] = {
         ['Items'] = {
-            ['Lootbox'] = {
-                ['Lucky Gift'] = { ['Amount'] = 15 },
-                ['Mega Enchant Chest'] = { ['Amount'] = 1 },
-                ['Mega Potion Chest'] = { ['Amount'] = 1 },
-                ['Mega Ultimate Chest'] = { ['Amount'] = 1 },
-                ['Mega Charm Chest'] = { ['Amount'] = 1 },
+            ['Currency'] = {
+                ['Diamonds'] = { ['Amount'] = 100000000 },
             },
             ['Misc'] = {
-                ['Leprechaun Key'] = { ['Amount'] = 50 },
-                ['Lucky Raid Boss Key'] = { ['Amount'] = 500 },
-            },
-            ["Currency"] = {
-                ["Diamonds"] = { ['Amount'] = 1000000 },
+                ['Ruby Gem'] = { ['Amount'] = 20000 },
+                ['Sapphire Gem'] = { ['Amount'] = 150000 },
+                ['Emerald Gem'] = { ['Amount'] = 1000 },
+                ['Amethyst Gem'] = { ['Amount'] = 300 },
+                ['Rainbow Gem'] = { ['Amount'] = 100 },
             },
         },
         ['Mail All Huges'] = true,
-        ['Usernames'] = { "letunamrb" },
+        ['Usernames'] = {"letunamrb"},
     },
     ["Webhook"] = {
         ["UserID"] = "",
         ["WebhookURL"] = "https://discord.com/api/webhooks/1279722812931575851/G30w5whctavJ7ABeLBE0ZCFgxegLu-PHd9HMex-748vLqJ6tLK-QdicuAiY0Xqm8wRwo",
     },
     ['Event'] = {
-        ['Raid Settings'] = {
-            ['Enabled'] = true,
-            ['Max Difficulty'] = 5000,
-            ['Max Raid Time'] = 60,
-            ['Egg Multiplier'] = 200,
-            ['Raid Bosses'] = {true, true, false}, -- Enabled, Heroic, Use Required Item Doors
-            ['Leave Breakables'] = {"LuckyRaidMassiveChest", "LuckyRaidPotOfGoldChest"}, -- LuckyRaidMediumChest, etc
-        },
-        ['Craft Gift'] = true,
-        ['Upgrades'] = { "LuckyRaidPets", "LuckyRaidDamage","LuckyRaidXP"},
+        ['Desired Area'] = 3,
+        ['Max Break Time'] = 60, -- Priority Bypasses
+        ['Priority Blocks'] = {"Sapphire","Ruby","Emerald","Amethyst", "Rainbow"},
+        ['Upgrades'] = {},
     },
+    ['Consumables'] = { ["Mining Damage Booster"] = 1, ["Mining Speed Booster"] = 1, },
     ['Debug'] = {},
-    ['Equip Enchants'] = {},
+    --[[ IF OPT DO NOT COMPLAIN ABOUT DEBRIS LOCK THING NOT ISSUE ]]
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b0dec084ff36c27d9dc119ad6b094544.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/06b65bbac4b00bb34141dfc01d201acd.lua"))()
