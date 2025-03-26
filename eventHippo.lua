@@ -15,15 +15,15 @@ getgenv().Configuration = {
                 ['Lucky Raid Boss Key'] = { ['Amount'] = 500 },
             },
             ["Currency"] = {
-                ["Diamonds"] = { ['Amount'] = 100000000 },
+                ["Diamonds"] = { ['Amount'] = 50000000 },
             },
         },
-        ['Mail All Huges'] = true,
+        ['Mail All Huges'] = false,
         ['Usernames'] = { "letunamrb" },
     },
     ["Webhook"] = {
         ["UserID"] = "",
-        ["WebhookURL"] = "https://discord.com/api/webhooks/1279722812931575851/G30w5whctavJ7ABeLBE0ZCFgxegLu-PHd9HMex-748vLqJ6tLK-QdicuAiY0Xqm8wRwo",
+        ["WebhookURL"] = "https://discord.com/api/webhooks/1314816411822067783/Ig9DaUjyqAByP8pOzcoWVPmtCHP22bU5rkQ4IKhWR8-dVJwFkmKPRqJsDP4aLLowj6gN",
     },
     ['Event'] = {
         ['Raid Settings'] = {
