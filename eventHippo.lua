@@ -30,7 +30,7 @@ getgenv().Configuration = {
             ['Enabled'] = true,
             ['Max Difficulty'] = 7000,
             ['Max Raid Time'] = 60,
-            ['Egg Multiplier'] = 300,
+            ['Egg Multiplier'] = 270,
             ['Raid Bosses'] = {true, false, true}, -- Enabled, Heroic, Use Required Item Doors
             ['Leave Breakables'] = {"LuckyRaidMassiveChest", "LuckyRaidPotOfGoldChest"}, -- LuckyRaidMediumChest, etc
         },
