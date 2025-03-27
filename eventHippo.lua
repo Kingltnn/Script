@@ -28,14 +28,14 @@ getgenv().Configuration = {
     ['Event'] = {
         ['Raid Settings'] = {
             ['Enabled'] = true,
-            ['Max Difficulty'] = 5000,
+            ['Max Difficulty'] = 7000,
             ['Max Raid Time'] = 60,
             ['Egg Multiplier'] = 300,
             ['Raid Bosses'] = {true, false, true}, -- Enabled, Heroic, Use Required Item Doors
             ['Leave Breakables'] = {"LuckyRaidMassiveChest", "LuckyRaidPotOfGoldChest"}, -- LuckyRaidMediumChest, etc
         },
         ['Craft Gift'] = true,
-        ['Upgrades'] = {  "LuckyRaidPets", "LuckyRaidDamage","LuckyRaidXP", "LuckyRaidAttackSpeed" },
+        ['Upgrades'] = {  "LuckyBetterHugeChest", "LuckyBetterTitanicChest","LuckyBetterLoot", },
     },
     ['Debug'] = {},
     ['Equip Enchants'] = {},
