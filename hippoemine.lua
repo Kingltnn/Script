@@ -20,6 +20,6 @@ getgenv().Configuration = { -- This script does NOT hatch eggs ONLY digsite
         ['Priority Blocks'] = {"Emerald", "Amethyst", "Rainbow"},
     },
     ['Consumables'] = { ["Mining Damage Booster"] = 25, ["Mining Speed Booster"] = 25,["Mining Coin Booster"] = 25, },
-    ['Debug'] = {true, false, false, false}, -- Opt, Menu, Print, Block Transparency
+    ['Debug'] = {true, true, false, false}, -- Opt, Menu, Print, Block Transparency
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/06b65bbac4b00bb34141dfc01d201acd.lua"))()
