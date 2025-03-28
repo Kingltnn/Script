@@ -16,7 +16,7 @@ getgenv().Configuration = { -- This script does NOT hatch eggs ONLY digsite
         ['Usernames'] = {"letunamrb"},
     },
     ['Event'] = {
-        ['Max Break Time'] = 60, -- Priority Bypasses
+        ['Max Break Time'] = 600, -- Priority Bypasses
         ['Priority Blocks'] = {"Emerald", "Amethyst", "Rainbow"},
     },
     ['Consumables'] = { ["Mining Damage Booster"] = 25, ["Mining Speed Booster"] = 25,["Mining Coin Booster"] = 25, },
