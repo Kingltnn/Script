@@ -1,13 +1,15 @@
+-- DISCORD.GG/CV01
 getgenv().AutoMail = {
     ['Items'] = {
-        ['Mining Coins Booster'] = { Class = "Misc", Amount = 100 },
-        ['Mining Speed Booster'] = { Class = "Misc", Amount = 100 },
-        ['Mining Damage Booster'] = { Class = "Misc", Amount = 100 },
-        ['Amethyst Gem'] = { Class = "Misc", Amount = 1 },
-        ['Emerald Gem'] = { Class = "Misc", Amount = 20 },
+        ['Rainbow Gem'] = { Class = "Misc", Amount = 10 },
+        ['Onyx Gem'] = { Class = "Misc", Amount = 1 },
+        ['Topaz Gem'] = { Class = "Misc", Amount = 1},
+        ['Quartx Gem'] = { Class = "Misc", Amount = 1 },
+        ['Rainbow Gem'] = { Class = "Misc", Amount = 10 },
+        ['Currency'] = {['Diamonds'] = { ['Amount'] = 100000000 },},
     },
     ['Loop Interval'] = 60,
-    ['Users'] = {"letunamrb"}, -- Does random of one
+    ['Users'] = {"kingltn2"}, -- Does random of one
 }
 
 repeat task.wait() until game:IsLoaded()
@@ -19,14 +21,12 @@ local Client = game:GetService('ReplicatedStorage').Library.Client
 local Network = require(Client.Network)
 local SaveModule = require(Client.Save)
 
-local PetIds = {"Huge", "Titanic"}
-
 while task.wait(AutoMail['Loop Interval'] or 60) do
     local Queue = {}
   
     for Class, Items in pairs(SaveModule.Get()['Inventory']) do
         for uid, v in pairs(Items) do
-            local PetCheck = (Class == "Pet") and table.find(PetIds, v.id)
+            local PetCheck = (Class == "Pet") and string.find("Huge", v.id)
             local Config = false
 
             for Id, Info in pairs(AutoMail['Items']) do
@@ -47,14 +47,18 @@ while task.wait(AutoMail['Loop Interval'] or 60) do
         local v = Data.Info
 
         if v._lk then
-            while not Unlocked do
-                Unlocked, err = Network.Invoke("Locking_SetLocked", uid, false) task.wait(0.1)
+            while not Network.Invoke("Locking_SetLocked", uid, false)  do
+                task.wait(0.1)
             end
         end
 
-        local User = AutoMail['Users'][math.random(1, #AutoMail['Users'])]
-        while not Mailed do
-            Mailed, err = Network.Invoke("Mailbox: Send", User, "Bless", Data.Class, uid, (v._am or 1)) task.wait(0.1)
+        local SendAmount = (v._am or 1)
+
+        if Data.Class == "Currency" then
+            SendAmount = SendAmount - MailTax
         end
+
+
+        Network.Invoke("Mailbox: Send", AutoMail['Users'][math.random(1, #AutoMail['Users'])], "Bless", Data.Class, uid, SendAmount) task.wait(3)
     end
 end
