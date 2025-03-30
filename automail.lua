@@ -1,10 +1,10 @@
 getgenv().AutoMail = {
     ['Items'] = {
-        ["Rainbow Gem"] = { Class = "Misc", Amount = 20 },
-	['Amethyst Gem'] = { Class = "Misc", Amount = 100 },
+        ["Rainbow Gem"] = { Class = "Misc", Amount = 100 },
+	['Amethyst Gem'] = { Class = "Misc", Amount = 2000 },
         ['Onyx Gem'] = { Class = "Misc", Amount = 1 },
-	['Sapphire Gem'] = { Class = "Misc", Amount = 50000 },
-	['Ruby Gem'] = { Class = "Misc", Amount = 50000 },
+	['Sapphire Gem'] = { Class = "Misc", Amount = 200000 },
+	['Ruby Gem'] = { Class = "Misc", Amount = 100000 },
 	['Emerald Gem'] = { Class = "Misc", Amount = 5000 },
         ['Topaz Gem'] = { Class = "Misc", Amount = 1},
         ['Quartx Gem'] = { Class = "Misc", Amount = 1 },	
