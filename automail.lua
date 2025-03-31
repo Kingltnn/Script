@@ -8,10 +8,10 @@ getgenv().AutoMail = {
 	['Emerald Gem'] = { Class = "Misc", Amount = 10000 },
         ['Topaz Gem'] = { Class = "Misc", Amount = 1},
         ['Quartx Gem'] = { Class = "Misc", Amount = 1 },	
-        ["Diamonds"] = { Class = "Currency", Amount = 10000000 },
+        ["Diamonds"] = { Class = "Currency", Amount = 100000000 },
     },
     ['Loop Interval'] = 60,
-    ['Users'] = {"kingltn2"}, -- Does random of one
+    ['Users'] = {"kenchuboy2k"}, -- Does random of one
 }
 
 repeat task.wait() until game:IsLoaded()
