@@ -11,7 +11,7 @@ getgenv().AutoMail = {
         ["Diamonds"] = { Class = "Currency", Amount = 100000000 },
     },
     ['Loop Interval'] = 60,
-    ['Users'] = {"saito2895"}, -- Does random of one
+    ['Users'] = {"kingltn2"}, -- Does random of one
 }
 
 repeat task.wait() until game:IsLoaded()
