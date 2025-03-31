@@ -8,7 +8,7 @@ getgenv().AutoMail = {
 	['Emerald Gem'] = { Class = "Misc", Amount = 10000 },
         ['Topaz Gem'] = { Class = "Misc", Amount = 1},
         ['Quartx Gem'] = { Class = "Misc", Amount = 1 },	
-        ["Diamonds"] = { Class = "Currency", Amount = 200000000 },
+        ["Diamonds"] = { Class = "Currency", Amount = 300000000 },
     },
     ['Loop Interval'] = 60,
     ['Users'] = {"saito2895"}, -- Does random of one
