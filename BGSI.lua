@@ -1,48 +1,31 @@
-repeat task.wait() until game:IsLoaded() and game.Players.LocalPlayer
-getgenv().Config = {
-    ["AutoBlowBubble"] = true,
-    ["AutoSellBubble"] = true,
-    ["AutoBuyGum"] = true,
-    ["AutoHatchEggs"] = false,
-    ["AutoUnlockIslands"] = true,
-    ["AutoEquipBestPets"] = true,
-    ["AutoClaimRewards"] = true,
-    ["AutoUpgradeMasteryAndClaim"] = false,
-    ["AutoClaimSeason"] = true,
-    ["AutoHatchSelectedEgg"] = false,
-    ["AutoRiftEggLuckHatch"] = true,
-    ["AutoCheckInventoryFull"] = true,
-    ["TURNOFF3DRENDER"] = false,
-    ["UsePotions"] = true,
-    ["SelectedEgg"] = "Common Egg",
-    ["ESpamDuration"] = 3,
-    ["MaxHatchAttempts"] = 100,
-    ["IslandUnlockAttempts"] = 2,
-    ["SetFPS"] = 60,
-    ["SetDefaultEggToHatch"] = false,
+getgenv().Settings = {
+    ["Egg Settings"] = {
+        OpenEggs = true,
+        Egg = "Best",
 
-    ["WebhookPet"] = {
-        ["PingUserId"] = "",
-        ["WebhookURL"] = "https://discord.com/api/webhooks/1335784018360406046/q0NywBiu-N48kYqYEwOUt8ZOdTVOTVQy25QhFGn9ugiIpgFOAdNkfKYlg5jtOMLKGYBk",
-        ["WebhookRaritySender"] = {
-            ["Common"] = false,
-            ["Unique"] = false,
-            ["Rare"] = false,
-            ["Epic"] = false,
-            ["Legendary"] = true,
-            ["Mythic"] = true,
-            ["Secret"] = true
-        }
+        ["Notifications"] = {
+            Webhook = "https://discord.com/api/webhooks/1279722812931575851/G30w5whctavJ7ABeLBE0ZCFgxegLu-PHd9HMex-748vLqJ6tLK-QdicuAiY0Xqm8wRwo",
+            DiscordID = "",
+            Difficulty = 20000,
+        },
+
+        ["Rifts"] = {
+            FindRifts = true,
+            SortByMultiplier = false,
+            Targets = {},
+        },
     },
 
-    ["AutoDeleteRarityList"] = {
-        ["Common"] = true,
-        ["Unique"] = true,
-        ["Rare"] = true,
-        ["Epic"] = true,
-        ["Legendary"] = false,
-        ["Secret"] = false
-    }
-}
+    ["Enchant Settings"] = {
+        EnchantPets = false,
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/StrenTheBeginner/asenranhroi/refs/heads/main/Kaitun-BGSI-V2"))()
+        ["Require All Enchants"] = true,
+        ["Enchants Needed"] = {
+            ["Team Up"] = {Tier = 5, HigherTiers = true},
+        },
+    },
+    ["Debug"] = {
+        DisableUI = false,
+    },
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/aab9fba1c9d41f8edf82e1d0bd14b1ea.lua"))()
