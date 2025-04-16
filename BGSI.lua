@@ -25,7 +25,7 @@ getgenv().Settings = {
         },
     },
     ["Debug"] = {
-        DisableUI = false,
+        DisableUI = true,
     },
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/aab9fba1c9d41f8edf82e1d0bd14b1ea.lua"))()
