@@ -17,7 +17,7 @@ getgenv().Settings = {
     },
 
     ["Enchant Settings"] = {
-        EnchantPets = true,
+        EnchantPets = false,
 
         ["Require All Enchants"] = true,
         ["Enchants Needed"] = {
@@ -25,7 +25,7 @@ getgenv().Settings = {
         },
     },
     ["Debug"] = {
-        DisableUI = true,
+        DisableUI = false,
     },
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/aab9fba1c9d41f8edf82e1d0bd14b1ea.lua"))()
