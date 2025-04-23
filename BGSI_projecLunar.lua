@@ -10,7 +10,7 @@ getgenv().Config = {
     ["SelectedEgg"] = "Infinity Egg",
     ["AutoHatchSelectedEgg"] = false,
     ----ONLY TURN ON 1 OF THEM to true ----
-    ["AutoRiftEggLuckHatch"] = true,
+    ["AutoRiftEggLuckHatch"] = false,
     ["FindRiftEggChance"] = 25, -- ✅ Chỉ chọn rift có luck ≤ 25 (x25 trở xuống)
     ----ONLY TURN ON 1 OF THEM to true ----
 
