@@ -16,13 +16,13 @@ getgenv().Settings = {
             --// true --> Sort by Multiplier out of ALL Targetted Rifts.
             --// false --> Sort by Multiplier out of BEST Targetted Rifts.
 
-            Targets = {"Aura Egg", "Throwback Egg" , "Pastel Egg"},
+            Targets = {"Aura Egg", "Throwback Egg" },
             --// Targets = {} will automatically find the Top 3 BEST Rifts to hatch.
         },
     },
 
     ["Debug"] = {
-        DisableUI = false,
+        DisableUI = true,
     },
 }
 loadstring(game:HttpGet("https://system-exodus.com/scripts/BGSI/OneClick.lua"))()
