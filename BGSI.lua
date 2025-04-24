@@ -1,31 +1,28 @@
 getgenv().Settings = {
     ["Egg Settings"] = {
         OpenEggs = true,
-        Egg = "Best",
+        Egg ="Rainbow Egg",
+        --// Supports ANY egg ("Rainbow Egg", "Infinity Egg", ...). Keep "Best" for new accounts.
 
         ["Notifications"] = {
-            Webhook = "https://discord.com/api/webhooks/1279722812931575851/G30w5whctavJ7ABeLBE0ZCFgxegLu-PHd9HMex-748vLqJ6tLK-QdicuAiY0Xqm8wRwo",
+            Webhook = "https://discord.com/api/webhooks/1364783387889635419/IQuXU9ql4SQGGQ8PzE36Ez5PT1VVHoDfzRcArXEuYFM5jomS_d1okwzoXOF6o2c2Zmmc",
             DiscordID = "",
-            Difficulty = 20000,
+            Difficulty = "100k", --// Minimum Difficulty for Webhook Notifications
         },
 
         ["Rifts"] = {
             FindRifts = true,
-            SortByMultiplier = false,
-            Targets = {},
+            SortByMultiplier = false, 
+            --// true --> Sort by Multiplier out of ALL Targetted Rifts.
+            --// false --> Sort by Multiplier out of BEST Targetted Rifts.
+
+            Targets = {"Aura Egg", "Throwback Egg" , "Pastel Egg", "Bunny Egg"},
+            --// Targets = {} will automatically find the Top 3 BEST Rifts to hatch.
         },
     },
 
-    ["Enchant Settings"] = {
-        EnchantPets = false,
-
-        ["Require All Enchants"] = true,
-        ["Enchants Needed"] = {
-            ["Team Up"] = {Tier = 5, HigherTiers = true},
-        },
-    },
     ["Debug"] = {
         DisableUI = false,
     },
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/aab9fba1c9d41f8edf82e1d0bd14b1ea.lua"))()
+loadstring(game:HttpGet("https://system-exodus.com/scripts/BGSI/OneClick.lua"))()
