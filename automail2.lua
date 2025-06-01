@@ -1,10 +1,9 @@
 -- DISCORD.GG/CV01
-getgenv().AutoMail = {
-    ["Misc"] = {
-        ["Basketball Gift"] = { Class = "lootbox", Amount = 70 },
+getgenv().AutoMail = { 
+        ["Basketball Gift"] = { Class = "Misc", Amount = 70 },
     },
     ['Loop Interval'] = 60,
-    ['Users'] = {"letunamrb"}, -- Does random of one
+    ['Users'] = {'letunamrb'}, -- Does random of one
 }
 
 repeat task.wait() until game:IsLoaded()
