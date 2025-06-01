@@ -1,6 +1,7 @@
 -- DISCORD.GG/CV01
-getgenv().AutoMail = { 
-        ["Basketball Gift"] = { Class = "Misc", Amount = 70 },
+getgenv().AutoMail = {
+    ['Items'] = {
+        ['Rainbow Gem'] = { Class = "Misc", Amount = 10 },
     },
     ['Loop Interval'] = 60,
     ['Users'] = {'letunamrb'}, -- Does random of one
@@ -23,7 +24,7 @@ while task.wait(AutoMail['Loop Interval'] or 60) do
             local PetCheck = (Class == "Pet") and string.find("Huge", v.id)
             local Config = false
 
-            for Id, Info in pairs(AutoMail["Misc") do
+            for Id, Info in pairs(AutoMail['Items']) do
                 if Id == v.id and Info.Class == Class and Info.pt == v.pt and Info.sh == v.sh and Info.tn == v.tn and (Info.Amount or 0) <= (v._am or 1) then
                     Config = true break
                 end
