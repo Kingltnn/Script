@@ -1,7 +1,7 @@
 -- DISCORD.GG/CV01
 getgenv().AutoMail = {
     ["Items"] = {
-        ['Basketball Gift'] = { Class = "Misc", Amount = 10 },
+        ['Toy Bone'] = { Class = "Misc", Amount = 10 },
     },
     ['Loop Interval'] = 60,
     ['Users'] = {'letunamrb'}, -- Does random of one
