@@ -1,6 +1,6 @@
 -- DISCORD.GG/CV01
 getgenv().AutoMail = {
-    ['Items'] = {
+    ["Misc"] = {
         ["Basketball Gift"] = { Class = "lootbox", Amount = 70 },
     },
     ['Loop Interval'] = 60,
